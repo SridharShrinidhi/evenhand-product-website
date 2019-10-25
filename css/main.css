@@ -1,0 +1,149 @@
+@font-face {
+  font-family: 'Butler';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgButler') format('svg'); /* Legacy iOS */
+}
+
+body {
+  background-color: #fff8f4;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-class {
+  display: flex;
+}
+
+main {
+
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+p {
+  font-family: 'Butler';
+  font-weight: 200;
+  font-style: normal;
+}
+
+h2,
+a {
+  font-family: 'Gopher';
+  font-weight: 400;
+  align-items: center;
+  text-decoration: none;
+}
+
+.email {
+  text-decoration: none;
+  color: #000000;
+  padding-top: 20px;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+.blue {
+  color: #4f57cc;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #4f57cc;
+  max-height: 40vh;
+  padding: 40px;
+  justify-content: space-between;
+}
+
+.btn-pink {
+  background-color: #f59388;
+  padding: 20px;
+}
+
+.btn-green {
+  background-color: #297163;
+  padding: 10px 20px;
+}
+
+.newsletter input {
+  height: 50px;
+  max-height: 50px;
+  border: 0;
+  background-color: white;
+  flex-grow: 2;
+  padding: 10px 0;
+}
+
+.newsletter {
+  display: flex;
+  width: 60%;
+}
+
+.newsletter a {
+  color: #fff8f4;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #fff8f4;
+}
+
+.footer li {
+  text-align: center;
+}
+
+@media only screen and (min-width: 38em) {
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  .email {
+    padding-top: 0;
+  }
+
+  .footer {
+    flex-direction: row;
+  }
+
+}
+
+@media only screen and (min-width: 64em) {
+
+  .section-1,
+  .section-2,
+  .section-3 {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .text-3,
+  .image-3 {
+    width: 50%;
+  }
+
+  .text-3 {
+    order: 2;
+  }
+
+  .image-3 {
+    order: 1;
+  }
+
+}
