@@ -40,7 +40,7 @@ p {
 h2,
 a {
   font-family: 'Gopher';
-  font-weight: 400;
+  font-weight: 500;
   align-items: center;
   text-decoration: none;
 }
@@ -96,6 +96,24 @@ a {
   color: #fff8f4;
 }
 
+.section-4 {
+  flex-direction: column;
+}
+
+.how-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-1,
+.step-2,
+.step-3 {
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  flex-direction: row;
+}
+
 .footer a {
   text-decoration: none;
   color: #fff8f4;
@@ -120,6 +138,19 @@ a {
 
   .footer {
     flex-direction: row;
+  }
+
+  .how-section {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .step-1,
+  .step-2,
+  .step-3 {
+    align-items: center;
+    text-align: center;
+    width: 33%;
   }
 
 }
